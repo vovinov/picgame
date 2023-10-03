@@ -31,10 +31,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
 # Application definition
 
-INSTALLED_APPS = [
+SYSTEM_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -43,13 +46,25 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 ]
 
+USERS_APPS = [
+    "questions.apps.QuestionsConfig",
+]
+
+THIRD_PARTY_APPS = [
+    "debug_toolbar",
+]
+
+INSTALLED_APPS = SYSTEM_APPS + USERS_APPS + THIRD_PARTY_APPS
+
 MIDDLEWARE = [
+
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
