@@ -3,6 +3,5 @@ from django.shortcuts import render
 
 
 def render_questions(request):
-    return HttpResponse('ok')
+    return render(request, 'questions/index.html')
 
-# Create your views here.
