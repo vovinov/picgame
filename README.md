@@ -1,7 +1,7 @@
 Versions
 
-23.10.2023
-
+24.10.2023
+v.0.0.7 - change some html code, add readme
 
 10.10.2023
 v.0.0.6 - Add utils, some html/css upgrades
