@@ -4,4 +4,4 @@ from data import questions
 
 
 def render_questions(request):
-    return render(request, 'questions/index.html', context={"movies": questions})
+    return render(request, 'questions/question.html', context={"movies": questions})

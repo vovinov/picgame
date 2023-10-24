@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Main title</title>
     <link type="text/css"
           rel="stylesheet"
@@ -14,27 +14,10 @@
           href="{% static 'questions/css/styles.css' %}"/>
 </head>
 <body>
-{{ movies }}
-<section class="question">
-    <div class="question_content">
-        <img class="question-picture" src="#" alt="#">
-        <ul class="question-answers">
-            <li class="question-answer">
-                <a href="{}" >Answer 1</a>
-            </li>
-            <li class="question-answer">
-                <a href="#" >Answer 1</a>
-            </li>
-            <li class="question-answer">
-                <a href="#" >Answer 1</a>
-            </li>
-            <li class="question-answer">
-                <a href="#" >Answer 1</a>
-            </li>
-        </ul>
-    </div>
-</section>
 
+{% block content %}
+
+{% endblock %}
 
 </body>
 </html>
