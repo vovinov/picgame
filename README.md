@@ -1,5 +1,8 @@
 Versions
 
+25.10.2023
+v.0.0.10 - add answer app, minor changes
+
 24.10.2023
 v.0.0.9 - change Question Model, add games app
 v.0.0.8 - add postqresql database, make first model

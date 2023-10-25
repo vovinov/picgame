@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
+class Game(models.Model):
+    date = models.DateTimeField(auto_now_add=True)
+    score = models.IntegerField()
