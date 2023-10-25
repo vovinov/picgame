@@ -1,5 +1,8 @@
 Versions
 
+26.10.2023
+v.0.0.11 - add answer app, minor changes
+
 25.10.2023
 v.0.0.10 - add answer app, minor changes
 

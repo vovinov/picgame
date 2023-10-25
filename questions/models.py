@@ -2,7 +2,8 @@ from django.db import models
 
 
 class QuestionList(models.Model):
-    pass
+    difficult = models.IntegerField()
+
 
 
 class Question(models.Model):

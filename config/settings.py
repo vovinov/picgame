@@ -48,6 +48,7 @@ SYSTEM_APPS = [
 
 USERS_APPS = [
     "questions.apps.QuestionsConfig",
+    "games.apps.GamesConfig",
 ]
 
 THIRD_PARTY_APPS = [
