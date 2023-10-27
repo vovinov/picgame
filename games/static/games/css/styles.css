@@ -13,8 +13,12 @@ html {
 }
 
 .game_button {
-    display: block;
+    display: inline-block;
+    text-decoration: none;
     height: 30px;
+    text-align: center;
+    color: black;
+    line-height: 3;
 
 }
 
