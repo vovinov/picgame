@@ -3,7 +3,7 @@
 {% block content %}
 
 <section class="game">
-    <a href="#" class="game_button" target="_blank">Начать игру</a>
+    <a href="{% url 'game' game.id %}" class="game_button" target="_self">Начать игру</a>
 </section>
 
 {% endblock %}

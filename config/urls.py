@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from games.views import render_game
+from games.views import render_site
+from questions.views import render_game
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", render_game),
+    path("", render_site, name='main'),
+    path("game/<int:game_id>/", render_game, name='game'),
     path("__debug__/", include("debug_toolbar.urls")),
 ]
