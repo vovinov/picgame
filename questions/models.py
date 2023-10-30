@@ -5,7 +5,7 @@ from django.urls import reverse
 class QuestionList(models.Model):
     difficult = models.IntegerField()
 
-    def get_abolute_url(self):
+    def get_absolute_url(self):
         return reverse('game', kwargs={'id': self.id})
 
 
