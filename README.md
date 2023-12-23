@@ -1,5 +1,8 @@
 Versions
 
+23.12.2023
+v.0.0.12 - minor changes, change templates
+
 26.10.2023
 v.0.0.11 - minor changes, change templates
 
