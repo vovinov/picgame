@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class QuestionsConfig(AppConfig):
+class PicgameSiteConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "questions"
+    name = "picgame_site"

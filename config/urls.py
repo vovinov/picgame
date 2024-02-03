@@ -18,18 +18,16 @@ from django.contrib import admin
 from django.conf import settings
 from django.urls import path, include
 
-from games.views import render_site
-from questions.views import render_game
+from picgame_site.views import render_home
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", render_site, name='main'),
-    path("game/<int:game_id>/", render_game, name='game'),
-    path("__debug__/", include("debug_toolbar.urls")),
+    path("", render_home, name='main'),
 ]
 
-# if settings.DEBUG:
-#     from django.conf.urls.static import static
-#
-#     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+if settings.DEBUG:
+    from django.conf.urls.static import static
+
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
